@@ -1,9 +1,11 @@
+import Section from 'components/Section/Section';
 import css from './Statistic.module.css';
 
 const Statistics = ({ good, bad, neutral, total, percentage }) => {
   return (
-    <div className="statistics_container">
-      <h2 className="statistics_title">Statistics</h2>
+    <div className={css.statistics_container}>
+      <Section title="Statistics" />
+
       <ul className={css.statistics_list}>
         <li className={css.statistic_item}>
           <p className={css.statistics_text}>Good: </p>
